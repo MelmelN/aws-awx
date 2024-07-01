@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: no
+  #vars_files:
+   
+
+  tasks:
+    - name: printing something
+      debug: 
+        msg: "{{hostvars}}" 

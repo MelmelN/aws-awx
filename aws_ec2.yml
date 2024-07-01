@@ -1,0 +1,21 @@
+---
+plugin: amazon.aws.aws_ec2
+
+# Specify the AWS region(s) from which to fetch EC2 instances
+regions:
+  - us-east-1  
+
+# This creates host groups based on architecture.
+#- prefix: instance_type
+# key: instance_type
+keyed_groups:
+- key: tags.Group
+  separator: ''
+- key: tags.Name
+  separator: ''
+aws_access_key_id: AKIAW3MEFTF5AJYBD7VK
+aws_secret_access_key: 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
+
+
+
+

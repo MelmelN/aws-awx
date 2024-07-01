@@ -1,0 +1,12 @@
+---
+plugin: amazon.aws.aws_ec2
+regions: us-east-1
+aws_access_key_id: AKIAW3MEFTF5AJYBD7VK
+aws_secret_access_key: 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
+
+hostnames:
+  # You can also specify a list in order of precedence for hostname variables.
+  - ip-address
+  - dns-name
+  - tag:Name
+  - private-ip-address
