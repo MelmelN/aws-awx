@@ -1,6 +1,0 @@
----
-- hosts: all
-  tasks:
-    - name: Print Hostnames
-      debug:
-        msg: "Hostname: {{ inventory_hostname }}"

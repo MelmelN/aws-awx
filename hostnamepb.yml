@@ -1,9 +1,0 @@
----
-- hosts: all
-  become: no
-  gather_facts: yes
-
-  tasks:
-    - name: Display ansible_hostname for each host
-      debug:
-        msg: "{{hostvars}}"
